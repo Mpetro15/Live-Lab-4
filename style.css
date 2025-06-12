@@ -1,0 +1,165 @@
+/* Set a soft, appealing background color for the whole page */
+body {
+    background-color: #e6f7f2; /* light greenish-blue */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 18px; /* slightly larger base font size */
+    line-height: 1.7; /* more line spacing for readability */
+    letter-spacing: 0.01em; /* subtle letter spacing */
+}
+
+/* Style the hero section */
+.hero {
+    /* Center the content horizontally and vertically with padding */
+    text-align: center;
+    padding: 80px 20px; /* generous spacing top/bottom and sides */
+    margin-top: 40px;
+    border-radius: 16px; /* slightly rounded corners */
+    background-color: #ffffffcc; /* soft white with a little transparency */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05); /* subtle shadow */
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.hero:hover {
+    box-shadow: 0 8px 24px rgba(46, 125, 90, 0.10); /* slightly stronger shadow on hover */
+    transform: translateY(-4px) scale(1.01); /* gentle lift effect */
+}
+
+/* Style the headline */
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2e7d5a; /* deep green */
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+/* Style the paragraph */
+.hero p {
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    letter-spacing: 0.01em;
+}
+
+/* Style the about section */
+.about {
+    /* Add spacing above and below */
+    margin: 40px auto;
+    padding: 40px 20px;
+    max-width: 600px;
+    background-color: #f5fcfa; /* very light green background */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); /* subtle shadow */
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+.about:hover {
+    box-shadow: 0 6px 18px rgba(46, 125, 90, 0.08);
+    transform: translateY(-2px) scale(1.01);
+}
+
+/* Style the about section title */
+.about h2 {
+    font-size: 2em;
+    color: #2e7d5a; /* deep green */
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+/* Style the about section paragraph */
+.about p {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    letter-spacing: 0.01em;
+}
+
+/* Style the call-to-action (CTA) section */
+.cta {
+    text-align: center;
+    margin: 40px auto;
+    padding: 30px 20px;
+    max-width: 600px;
+    background-color: #e6f7f2; /* soft background */
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+/* Style the CTA message */
+.cta p {
+    font-size: 1.2em;
+    color: #2e7d5a;
+    margin-bottom: 20px;
+    letter-spacing: 0.01em;
+}
+
+/* Style the CTA button */
+.cta button {
+    background-color: #2e7d5a; /* deep green */
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+.cta button:hover {
+    background-color: #256b4a;
+    transform: scale(1.04); /* slightly enlarge button on hover */
+}
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive styles for screens 600px and wider */
+@media (min-width: 600px) {
+    /* Increase padding and font sizes for hero section */
+    .hero {
+        padding: 100px 40px;
+    }
+    .hero h1 {
+        font-size: 3em;
+    }
+    .hero p {
+        font-size: 1.4em;
+    }
+
+    /* Increase spacing and font size for about section */
+    .about {
+        padding: 60px 40px;
+    }
+    .about h2 {
+        font-size: 2.4em;
+    }
+    .about p {
+        font-size: 1.3em;
+    }
+
+    /* Increase spacing for CTA section */
+    .cta {
+        padding: 50px 40px;
+    }
+    .cta p {
+        font-size: 1.4em;
+    }
+    .cta button {
+        font-size: 1.1em;
+        padding: 16px 36px;
+    }
+}

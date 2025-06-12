@@ -1,16 +1,256 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>LiveLab 4 Demo</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nomadiq Travel Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    /* Use Georgia for headings and Arial for body text */
+    body {
+      font-family: Arial, sans-serif; /* Body text */
+      background-color: #B3D8E7; /* Gentle blue background */
+      color: #4B715A; /* Deep forest green text */
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, serif; /* Headings */
+      color: #4B715A; /* Deep forest green for headings */
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: block;
+    }
+
+    nav {
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    /* Accent section with soft green */
+    .section-accent {
+      background-color: #A8D5BA; /* Soft green */
+      padding: 20px;
+    }
+
+    /* Button with sky blue */
+    .button {
+      background-color: #6EC6E6; /* Sky blue */
+      color: #4B715A; /* Deep forest green text */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    /* Optional: sand color for footer or special areas */
+    .footer {
+      background-color: #F5E9CF; /* Warm sand */
+      color: #4B715A;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Hero section styles */
+    .hero {
+      background-color: #1e3a8a; /* Dark blue background for hero section */
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* About section styles */
+    .about {
+      background-color: #A8D5BA; /* Soft green background */
+      color: #4B715A; /* Deep forest green text */
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Call-to-action section styles */
+    .cta {
+      background-color: #6EC6E6; /* Sky blue background */
+      color: #4B715A; /* Deep forest green text */
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta button {
+      background-color: #4B715A; /* Deep forest green */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+      .menu-toggle {
+        display: none;
+      }
+
+      nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+        gap: 2rem;
+      }
+
+      .hero {
+        padding: 100px 20px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .hero p {
+        font-size: 1.5rem;
+      }
+
+      .about {
+        padding: 60px 20px;
+      }
+
+      .about h2 {
+        font-size: 2.5rem;
+      }
+
+      .about p {
+        font-size: 1.2rem;
+      }
+
+      .cta {
+        padding: 40px 20px;
+      }
+
+      .cta p {
+        font-size: 1.5rem;
+      }
+
+      .cta button {
+        padding: 15px 30px;
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+  <header>
+    <div class="logo">Nomadiq Travel Destinations</div>
+    <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button>
+    <nav id="nav">
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
+  <!-- Hero section starts here -->
+  <section class="hero">
+    <!-- Main headline -->
+    <h1>Explore Sustainable Travel</h1>
+    <!-- Descriptive paragraph -->
+    <p>
+      Discover ways to travel responsibly and make a positive impact on the environment. 
+      Learn tips for eco-friendly adventures and support local communities on your journeys.
+    </p>
+  </section>
+
+  <!-- About section starts here -->
+  <section class="about">
+    <!-- Section title -->
+    <h2>About Nomadiq Travel Destinations</h2>
+    <!-- Brief description about the company's eco-friendly focus -->
+    <p>
+      Nomadiq Travel Destinations is dedicated to promoting eco-friendly travel experiences. 
+      We help travelers discover destinations and activities that respect the environment and support local communities.
+    </p>
+  </section>
+
+  <!-- Call-to-action section starts here -->
+  <section class="cta">
+    <!-- Message encouraging users to take action -->
+    <p>Ready to start your sustainable adventure?</p>
+    <!-- Clickable button -->
+    <button>Plan Your Trip</button>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function updateNavDisplay() {
+      const nav = document.getElementById('nav');
+      if (window.innerWidth >= 768) {
+        nav.style.display = 'flex';
+      } else {
+        nav.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('resize', updateNavDisplay);
+    window.addEventListener('load', updateNavDisplay);
+  </script>
+</body>
 </html>
